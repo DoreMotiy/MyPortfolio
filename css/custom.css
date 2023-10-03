@@ -1,0 +1,12 @@
+#top {
+    height: 100vh;
+}
+
+.star {
+    color: blue;
+}
+
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
