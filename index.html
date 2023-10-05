@@ -15,66 +15,59 @@
         <link rel="stylesheet" href="./css/custom.css" />
     </head>
     <body>
-        <!-- Header -->
-        <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
-            <div class="container-fluid">
-                <a class="navbar-brand ms-5" href="#top">Koki Nakamoto</a>
-                <div class="me-5">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#works">Works</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#skills">Skills</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#about">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#contact">Contact</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-
-        <main>
-            <!-- Top -->
+        <div
+            class="container d-md-flex mt-5 mx-auto row justify-content-between align-items-start"
+        >
             <div
-                class="container d-flex align-items-center justify-content-center"
-                id="top"
+                class="col-12 col-md-4 row justify-content-center flex-md-column"
+                id="buttons"
             >
-                <h1 class="h1">ポートフォリオ</h1>
+                <div class="col-3 col-md-12 mb-md-3 menudiv">
+                    <button type="button" class="menubtn" id="menu1">About</button>
+                </div>
+                <div class="col-3 col-md-12 mb-md-3 menudiv">
+                    <button type="button" class="menubtn" id="menu2">Works</button>
+                </div>
+                <div class="col-3 col-md-12 mb-md-3 menudiv">
+                    <button type="button" class="menubtn" id="menu3">Skills</button>
+                </div>
+                <div class="col-3 col-md-12 mb-md-3 menudiv">
+                    <button type="button" class="menubtn" id="menu4">Contact</button>
+                </div>
             </div>
-
-            <!-- Skills -->
-            <div class="container px-5 mt-5" id="skills">
-                <h2 class="h2 text-center">Skills</h2>
-                <div class="row">
-                    <div class="col-6">
-                        <div class="card">
-                            <div class="card-header fw-bold">Python</div>
-                            <div class="card-body">
-                                <blockquote class="blockquote mb-0">
-                                    <p class="star">★★☆☆☆</p>
-                                    <p class="card-text">少しできます</p>
-                                </blockquote>
-                            </div>
+            <div class="col-12 col-md-8 mt-5 mt-md-0 border border-5" id="contents">
+                <!-- About -->
+                <div class="collapse show text-center" id="content1">
+                    <h1 class="h1 mt-3">About</h1>
+                    <div class="mt-5 row justify-content-around">
+                        <div class="col-4">
+                            <img src="./images/me.jpg" alt="顔写真" id="picbg" />
+                        </div>
+                        <div class="col-6 text-start">
+                            <h5>名前</h5>
+                            <p>Koki Nakamoto</p>
+                            <h5>学校</h5>
+                            <p>日本総合ビジネス専門学校</p>
+                            <h5>居住地</h5>
+                            <p>滋賀県</p>
                         </div>
                     </div>
                 </div>
-                <!-- <div class="skills-width">
-                    <div class="row">
-                        <div class="col-3">
-                            <div class="fw-bold">Python</div>
-                        </div>
-                        <div class="d-flex col-4 col-md-3">
-                            <div class="star">★★☆☆☆</div>
-                        </div>
-                        <div class="col-5 col-md-6">少しできます</div>
-                    </div>
-                </div> -->
+                <div class="collapse" id="content2">
+                    <p>content2</p>
+                </div>
+                <div class="collapse" id="content3">
+                    <p>content3</p>
+                </div>
+                <div class="collapse" id="content4">
+                    <p>content4</p>
+                </div>
             </div>
-        </main>
+        </div>
+
+        <!-- JavaScript -->
+        <script src="./libs/jquery/jquery-3.6.1.min.js"></script>
+        <script src="./libs/bootstrap/bootstrap.min.js"></script>
+        <script src="./main.js"></script>
     </body>
 </html>
