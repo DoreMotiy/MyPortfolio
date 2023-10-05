@@ -8,20 +8,13 @@
         <!-- CSS -->
         <link rel="stylesheet" href="./libs/bootstrap/bootstrap.min.css" />
         <link rel="stylesheet" href="./libs/bootstrap/carousel.css" />
-        <link
-            rel="stylesheet"
-            href="//cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css"
-        />
+        <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css" />
         <link rel="stylesheet" href="./css/custom.css" />
     </head>
     <body>
-        <div
-            class="container d-md-flex mt-5 mx-auto row justify-content-between align-items-start"
-        >
-            <div
-                class="col-12 col-md-4 row justify-content-center flex-md-column"
-                id="buttons"
-            >
+        <div class="container d-md-flex mt-5 mx-auto row justify-content-between align-items-start">
+            <!-- Buttons -->
+            <div class="col-12 col-md-4 row justify-content-center flex-md-column" id="buttons">
                 <div class="col-3 col-md-12 mb-md-3 menudiv">
                     <button type="button" class="menubtn" id="menu1">About</button>
                 </div>
@@ -35,32 +28,89 @@
                     <button type="button" class="menubtn" id="menu4">Contact</button>
                 </div>
             </div>
+
+            <!-- Contents -->
             <div class="col-12 col-md-8 mt-5 mt-md-0 border border-5" id="contents">
                 <!-- About -->
-                <div class="collapse show text-center" id="content1">
+                <div class="collapse text-center" id="content1">
                     <h1 class="h1 mt-3">About</h1>
                     <div class="mt-5 row justify-content-around">
                         <div class="col-4">
                             <img src="./images/me.jpg" alt="顔写真" id="picbg" />
                         </div>
                         <div class="col-6 text-start">
-                            <h5>名前</h5>
+                            <h5 class="h5 fw-bold">名前</h5>
                             <p>Koki Nakamoto</p>
-                            <h5>学校</h5>
+                            <h5 class="h5 fw-bold">学校</h5>
                             <p>日本総合ビジネス専門学校</p>
-                            <h5>居住地</h5>
+                            <h5 class="h5 fw-bold">居住地</h5>
                             <p>滋賀県</p>
                         </div>
                     </div>
                 </div>
+
                 <div class="collapse" id="content2">
-                    <p>content2</p>
+                    <h1 class="h1 mt-3">About</h1>
                 </div>
-                <div class="collapse" id="content3">
-                    <p>content3</p>
+
+                <!-- Skills -->
+                <div class="collapse text-center" id="content3">
+                    <h1 class="h1 mt-3">Skills</h1>
+                    <div class="mt-5 row">
+                        <div class="col-6 mb-3">
+                            <div class="card">
+                                <div class="card-header fw-bold">Python</div>
+                                <div class="card-body">
+                                    <p class="star">★★★☆☆</p>
+                                    <p class="card-text">少しできます</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 mb-3">
+                            <div class="card">
+                                <div class="card-header fw-bold">C++</div>
+                                <div class="card-body">
+                                    <p class="star">★★★☆☆</p>
+                                    <p class="card-text">少しできます</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 mb-3">
+                            <div class="card">
+                                <div class="card-header fw-bold">JavaScript</div>
+                                <div class="card-body">
+                                    <p class="star">★★☆☆☆</p>
+                                    <p class="card-text">少しできます</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 mb-3">
+                            <div class="card">
+                                <div class="card-header fw-bold">C#</div>
+                                <div class="card-body">
+                                    <p class="star">★★☆☆☆</p>
+                                    <p class="card-text">少しできます</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 mb-3">
+                            <div class="card">
+                                <div class="card-header fw-bold">Dart</div>
+                                <div class="card-body">
+                                    <p class="star">★☆☆☆☆</p>
+                                    <p class="card-text">少しできます</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="collapse" id="content4">
-                    <p>content4</p>
+
+                <!-- Contact -->
+                <div class="collapse show text-center" id="content4">
+                    <h1 class="h1 mt-3">Contact</h1>
+                    <div class="text-center mt-5">
+                        <p><i class="bi bi-envelope"></i> &emsp;nakamoto-k2223@school.ac.jp</p>
+                    </div>
                 </div>
             </div>
         </div>
