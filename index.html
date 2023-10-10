@@ -15,24 +15,19 @@
         <div class="container d-md-flex mt-5 mx-auto row justify-content-between align-items-start">
             <!-- Buttons -->
             <div class="col-12 col-md-4 row justify-content-center flex-md-column" id="buttons">
-                <div class="col-3 col-md-12 mb-md-3 menudiv">
-                    <button type="button" class="menubtn" id="menu1">About</button>
-                </div>
-                <div class="col-3 col-md-12 mb-md-3 menudiv">
-                    <button type="button" class="menubtn" id="menu2">Works</button>
-                </div>
-                <div class="col-3 col-md-12 mb-md-3 menudiv">
-                    <button type="button" class="menubtn" id="menu3">Skills</button>
-                </div>
-                <div class="col-3 col-md-12 mb-md-3 menudiv">
-                    <button type="button" class="menubtn" id="menu4">Contact</button>
-                </div>
+                <button type="button" class="col-3 col-md-12 menubtn" id="menu1">About</button>
+
+                <button type="button" class="col-3 col-md-12 menubtn" id="menu2">Works</button>
+
+                <button type="button" class="col-3 col-md-12 menubtn" id="menu3">Skills</button>
+
+                <button type="button" class="col-3 col-md-12 menubtn" id="menu4">Contact</button>
             </div>
 
             <!-- Contents -->
             <div class="col-12 col-md-8 mt-5 mt-md-0 border border-5" id="contents">
                 <!-- About -->
-                <div class="collapse text-center" id="content1">
+                <div class="collapse text-center show" id="content1">
                     <h1 class="h1 mt-3">About</h1>
                     <div class="mt-5 row justify-content-around">
                         <div class="col-4">
@@ -49,8 +44,50 @@
                     </div>
                 </div>
 
-                <div class="collapse" id="content2">
-                    <h1 class="h1 mt-3">About</h1>
+                <!-- Works -->
+                <div class="collapse text-center" id="content2">
+                    <h1 class="h1 mt-3">Works</h1>
+                    <div class="row mt-5">
+                        <div class="col-12 col-lg-6 text-start mb-3">
+                            <a href="">
+                                <div class="card w-100">
+                                    <div class="workimg ratio ratio-21x9">
+                                        <img src="./images/ag.png" alt="聖遺物生成-強化" class="card-img" />
+                                    </div>
+                                    <div class="card-img-overlay">
+                                        <h5 class="h5 fw-bold">聖遺物生成-強化</h5>
+                                        <p class="">原神の聖遺物をランダムで1つ生成したり、強化できるサイトです。</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-12 col-lg-6 text-start mb-3">
+                            <a href="">
+                                <div class="card w-100">
+                                    <div class="workimg ratio ratio-21x9">
+                                        <img src="./images/kc.png" alt="キーカード確率計算" class="card-img" />
+                                    </div>
+                                    <div class="card-img-overlay">
+                                        <h5 class="h5 fw-bold">キーカード確率計算</h5>
+                                        <p class="">初動でデッキのキーカードが引ける確率を知りたいときに使えるサイトです。</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-12 col-lg-6 text-start mb-3">
+                            <a href="">
+                                <div class="card w-100">
+                                    <div class="workimg ratio ratio-21x9">
+                                        <img src="./images/td.png" alt="Todoリスト" class="card-img" />
+                                    </div>
+                                    <div class="card-img-overlay">
+                                        <h5 class="h5 fw-bold">Todoリスト</h5>
+                                        <p class="">一般的なTodoリストです。色で簡易的に管理できます。</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
                 </div>
 
                 <!-- Skills -->
@@ -106,7 +143,7 @@
                 </div>
 
                 <!-- Contact -->
-                <div class="collapse show text-center" id="content4">
+                <div class="collapse text-center" id="content4">
                     <h1 class="h1 mt-3">Contact</h1>
                     <div class="text-center mt-5">
                         <p><i class="bi bi-envelope"></i> &emsp;nakamoto-k2223@school.ac.jp</p>
