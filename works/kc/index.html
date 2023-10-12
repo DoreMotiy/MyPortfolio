@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>キーカード初動確率</title>
+        <link rel="stylesheet" href="./css/custom.css" />
+    </head>
+    <body>
+        <div class="container">
+            <h3>モンテカルロ法を使って初手でキーカードを引ける確率を計算</h3>
+            <div class="main">
+                <div class="input">
+                    <div class="input_group">
+                        <p class="txt">デッキの枚数</p>
+                        <input class="deck_size" type="text" placeholder="自然数を入力" />
+                    </div>
+                    <div class="input_group">
+                        <p class="txt">キーカードの枚数</p>
+                        <input class="key_num" type="text" placeholder="自然数を入力" />
+                    </div>
+                    <div class="input_group">
+                        <p class="txt">初手の手札の枚数</p>
+                        <input class="hand_num" type="text" placeholder="自然数を入力" />
+                    </div>
+                    <div class="input_group">
+                        <p class="txt">試行回数</p>
+                        <input class="simulate_num" type="text" placeholder="自然数を入力" />
+                    </div>
+                </div>
+                <div class="output">
+                    <button class="calc">計算</button>
+                    <h4 class="result" type="text" readonly></h4>
+                </div>
+            </div>
+        </div>
+        <script src="//code.jquery.com/jquery-3.6.1.min.js"></script>
+        <script src="./main.js"></script>
+    </body>
+</html>

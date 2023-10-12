@@ -1,0 +1,44 @@
+.container {
+    width: 50%;
+    margin: 0 auto;
+    padding: 10px;
+    background-color: #cff;
+}
+
+.container h3 {
+    text-align: center;
+}
+
+.container .main {
+    border: black 1px solid;
+    padding: 10px;
+}
+
+.container .main .input {
+    width: 100%;
+    display: flex;
+}
+
+.container .main .input .input_group {
+    padding: 5px;
+    width: calc(100% / 4);
+}
+
+.container .main .input .input_group input {
+    width: calc(100% - 8px);
+}
+
+.container .main .input .input_group .txt {
+    margin: 0;
+    text-align: center;
+}
+
+.container .main .output {
+    text-align: center;
+    padding: 10px;
+}
+
+.container .main .output .calc {
+    width: 100px;
+    height: 25px;
+}

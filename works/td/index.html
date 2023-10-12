@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="shortcut icon" href="./images/favicon.ico" />
+        <title>Research</title>
+        <!-- CSS -->
+        <link rel="stylesheet" href="./css/custom.css" />
+    </head>
+    <body>
+        <div class="container">
+            <div class="addreset">
+                <input class="add_txt" type="text" placeholder="メモを入力" />
+                <select name="memo_color">
+                    <option value="#ffadad">赤色</option>
+                    <option value="#adffff">青色</option>
+                    <option value="#adffad">緑色</option>
+                    <option value="#ffffad">黄色</option>
+                </select>
+                <button class="add_btn">追加</button>
+                <button class="reset_btn">リセット</button>
+            </div>
+            <table class="memos">
+                <tbody class="t_red"></tbody>
+                <tbody class="t_blue"></tbody>
+                <tbody class="t_green"></tbody>
+                <tbody class="t_yellow"></tbody>
+            </table>
+        </div>
+        <!-- JavaScript -->
+        <script src="//cdn.jsdelivr.net/npm/axios@0.21.1/dist/axios.min.js"></script>
+        <script src="//code.jquery.com/jquery-3.6.1.min.js"></script>
+        <script src="./main.js"></script>
+    </body>
+</html>

@@ -1,0 +1,47 @@
+html,
+body {
+    background-color: bisque;
+}
+
+img {
+    width: 500px;
+}
+h1 {
+    display: flex;
+    justify-content: space-around;
+}
+.product ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.product ul li {
+    list-style: none;
+    padding: 20px;
+}
+.product p {
+    text-align: center;
+    font-size: 30px;
+}
+#toma_btn,
+#cu_btn,
+#green_btn,
+#stra_btn {
+    margin: auto;
+    width: 100px;
+}
+.product #btn {
+    grid-column: 4;
+    text-align: right;
+    margin-right: 5px;
+}
+.shopping {
+    grid-column: 4;
+    border: solid orange;
+    width: 300px;
+    text-align: center;
+    margin-right: 5px;
+    margin: 0 auto;
+}
+.shopping p {
+    font-size: 20px;
+}

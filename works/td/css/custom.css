@@ -1,0 +1,63 @@
+html,
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+.container {
+    width: 50%;
+    height: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #eee;
+}
+
+.addreset {
+    width: 100%;
+    height: 50px;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    gap: 10px;
+}
+
+input[type="text"],
+select,
+button {
+    height: 50px;
+    font-size: 150%;
+}
+
+select {
+    text-align: center;
+}
+
+.memos {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 10px;
+}
+
+.memos tbody {
+    margin: 0;
+    padding: 0;
+}
+
+.memos tr {
+    width: 100%;
+    height: 50px;
+}
+
+.memos .memo_txt {
+    font-size: 24px;
+    padding-left: 25px;
+}
+
+.memos .x_btn {
+    width: 50px;
+    margin-right: 20px;
+    text-align: center;
+    color: red;
+    font-size: 200%;
+}

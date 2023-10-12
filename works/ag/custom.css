@@ -1,0 +1,146 @@
+.container {
+    width: 400px;
+    margin: 0 auto;
+}
+
+.result {
+    height: calc(351px - 30px);
+    background-color: #cff;
+    padding: 15px;
+}
+
+.upper {
+    background: linear-gradient(to bottom right, #8a7473, #f3bd67);
+    color: white;
+}
+
+.lower {
+    background-color: #ece5d8;
+}
+
+h2,
+h5,
+h6,
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+h5 {
+    font-weight: normal;
+}
+
+.type {
+    margin-bottom: 30px;
+}
+
+.main_stat {
+    color: #e0cfc8;
+}
+
+.main_value {
+    line-height: 100%;
+}
+
+.stars {
+    display: none;
+    color: #ffcc32;
+}
+
+.level {
+    display: none;
+    background-color: #39444f;
+    color: white;
+    font-weight: bold;
+    padding: 2px 10px;
+    border-radius: 2px;
+    vertical-align: middle;
+}
+
+.sub_stats {
+    margin-top: 15px;
+    color: #495366;
+    font-weight: bold;
+}
+
+li {
+    list-style: none;
+    margin: 2px 0;
+}
+
+.btn {
+    height: 50px;
+    text-align: center;
+    margin-top: auto;
+    background-color: #cff;
+}
+
+.btn button {
+    width: 300px;
+    height: 40px;
+    margin-bottom: 10px;
+    font-size: 17px;
+    font-weight: bold;
+    text-align: left;
+}
+
+.generate {
+    background-color: #576270;
+    padding-left: 15px;
+    border: none;
+    outline: #bdb7a7 2px solid;
+    outline-offset: -4px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    color: white;
+    position: relative; /* 基準位置とする */
+}
+
+.generate::before {
+    content: ""; /* 疑似要素に必須 */
+    margin-left: 75px;
+    width: calc(100% * 3 / 4); /* 幅いっぱい */
+    height: 100%; /* 高さいっぱい */
+    display: block; /* 高さを指定するためにブロック要素にする */
+    background: linear-gradient(to right, rgba(132, 255, 255, 0) 0, #cff 100%); /* 徐々に透明にする */
+    position: absolute; /*  */
+    top: 0;
+    left: 0;
+}
+
+.lock {
+    margin-right: 10px;
+}
+
+.enhance {
+    display: none;
+    background-color: #ece5d8;
+    border: none;
+    border-radius: 20px;
+    color: #2c344c;
+}
+
+.circle {
+    /* display: inline-block; */
+    width: 16px;
+    height: 16px;
+    margin-top: 5px;
+    margin-left: 4px;
+    color: #ffd559;
+    background-color: #323131;
+    padding: 4px;
+    border-radius: 50%;
+    margin-right: calc(((300px / 2) - (34px / 2)) - 15px - 16px);
+    position: relative;
+}
+
+.circle::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 6px;
+    border-radius: 50%;
+    border: #ffd559 solid 2px;
+}
