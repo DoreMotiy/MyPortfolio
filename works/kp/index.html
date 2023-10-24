@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>ナップサック問題を解くよ</title>
+        <!-- CSS -->
+        <link rel="stylesheet" href="./libs/bootstrap/bootstrap.min.css" />
+        <link rel="stylesheet" href="./libs/bootstrap/carousel.css" />
+    </head>
+    <body>
+        <div class="container">
+            <div class="main container-fluid">
+                <div class="row text-dark py-5">
+                    <div class="col"></div>
+                    <div class="col-md-8 col-lg-6">
+                        <h3 class="fs-3 mb-5 text-center fw-bold">ナップサック問題</h3>
+                        <div class="mb-3">
+                            <input type="text" class="form-control" id="name" placeholder="名前(コンマ区切り)" value="" />
+                        </div>
+                        <div class="mb-3">
+                            <input type="text" class="form-control" id="value" placeholder="価値(コンマ区切り)" value="" />
+                        </div>
+                        <div class="mb-3">
+                            <input type="text" class="form-control" id="size" placeholder="サイズ(コンマ区切り)" value="" />
+                        </div>
+                        <div class="mb-3">
+                            <input type="text" class="form-control" id="cap" placeholder="ナップサックの容量" value="" />
+                        </div>
+                        <div class="mb-3 row">
+                            <div class="col-4 text-center">
+                                <button type="button" class="btn btn-primary" id="changeKP">0-1</button>
+                            </div>
+                            <div class="col-4 text-center">
+                                <button type="button" class="btn btn-secondary" id="exam">例題</button>
+                            </div>
+                            <div class="col-4 text-center">
+                                <button type="button" class="btn btn-primary" id="solve">実行</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- JavaScript -->
+        <script src="./libs/jquery/jquery-3.6.1.min.js"></script>
+        <script src="./libs/bootstrap/bootstrap.min.js"></script>
+        <script src="./main.js"></script>
+    </body>
+</html>
