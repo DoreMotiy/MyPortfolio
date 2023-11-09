@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>数独ソルバー</title>
+        <!-- CSS -->
+        <link rel="stylesheet" href="./libs/bootstrap/bootstrap.min.css" />
+        <link rel="stylesheet" href="./libs/bootstrap/carousel.css" />
+        <link rel="stylesheet" href="./css/style.css" />
+    </head>
+    <body>
+        <div class="container-fluid row mx-auto" id="container">
+            <h1 class="my-5 text-center">数独ソルバー</h1>
+            <div class="col-12 col-md-4" id="btns">
+                <button type="button" class="btn btn-primary w-100 numbtn" value="1">1</button>
+                <button type="button" class="btn btn-primary w-100 numbtn" value="2">2</button>
+                <button type="button" class="btn btn-primary w-100 numbtn" value="3">3</button>
+                <button type="button" class="btn btn-primary w-100 numbtn" value="4">4</button>
+                <button type="button" class="btn btn-primary w-100 numbtn" value="5">5</button>
+                <button type="button" class="btn btn-primary w-100 numbtn" value="6">6</button>
+                <button type="button" class="btn btn-primary w-100 numbtn" value="7">7</button>
+                <button type="button" class="btn btn-primary w-100 numbtn" value="8">8</button>
+                <button type="button" class="btn btn-primary w-100 numbtn" value="9">9</button>
+                <button type="button" class="btn btn-primary w-100 numbtn" value="">削除</button>
+            </div>
+            <div class="col-12 col-md-8 mt-3 mt-md-0">
+                <div id="board">
+                    <div class="cell r0 c0 d-flex align-items-center justify-content-center" id="0"></div>
+                    <div class="cell r0 c1 d-flex align-items-center justify-content-center" id="1"></div>
+                    <div class="cell r0 c2 d-flex align-items-center justify-content-center" id="2"></div>
+                    <div class="cell r0 c3 d-flex align-items-center justify-content-center" id="3"></div>
+                    <div class="cell r0 c4 d-flex align-items-center justify-content-center" id="4"></div>
+                    <div class="cell r0 c5 d-flex align-items-center justify-content-center" id="5"></div>
+                    <div class="cell r0 c6 d-flex align-items-center justify-content-center" id="6"></div>
+                    <div class="cell r0 c7 d-flex align-items-center justify-content-center" id="7"></div>
+                    <div class="cell r0 c8 d-flex align-items-center justify-content-center" id="8"></div>
+                    <div class="cell r1 c0 d-flex align-items-center justify-content-center" id="9"></div>
+                    <div class="cell r1 c1 d-flex align-items-center justify-content-center" id="10"></div>
+                    <div class="cell r1 c2 d-flex align-items-center justify-content-center" id="11"></div>
+                    <div class="cell r1 c3 d-flex align-items-center justify-content-center" id="12"></div>
+                    <div class="cell r1 c4 d-flex align-items-center justify-content-center" id="13"></div>
+                    <div class="cell r1 c5 d-flex align-items-center justify-content-center" id="14"></div>
+                    <div class="cell r1 c6 d-flex align-items-center justify-content-center" id="15"></div>
+                    <div class="cell r1 c7 d-flex align-items-center justify-content-center" id="16"></div>
+                    <div class="cell r1 c8 d-flex align-items-center justify-content-center" id="17"></div>
+                    <div class="cell r2 c0 d-flex align-items-center justify-content-center" id="18"></div>
+                    <div class="cell r2 c1 d-flex align-items-center justify-content-center" id="19"></div>
+                    <div class="cell r2 c2 d-flex align-items-center justify-content-center" id="20"></div>
+                    <div class="cell r2 c3 d-flex align-items-center justify-content-center" id="21"></div>
+                    <div class="cell r2 c4 d-flex align-items-center justify-content-center" id="22"></div>
+                    <div class="cell r2 c5 d-flex align-items-center justify-content-center" id="23"></div>
+                    <div class="cell r2 c6 d-flex align-items-center justify-content-center" id="24"></div>
+                    <div class="cell r2 c7 d-flex align-items-center justify-content-center" id="25"></div>
+                    <div class="cell r2 c8 d-flex align-items-center justify-content-center" id="26"></div>
+                    <div class="cell r3 c0 d-flex align-items-center justify-content-center" id="27"></div>
+                    <div class="cell r3 c1 d-flex align-items-center justify-content-center" id="28"></div>
+                    <div class="cell r3 c2 d-flex align-items-center justify-content-center" id="29"></div>
+                    <div class="cell r3 c3 d-flex align-items-center justify-content-center" id="30"></div>
+                    <div class="cell r3 c4 d-flex align-items-center justify-content-center" id="31"></div>
+                    <div class="cell r3 c5 d-flex align-items-center justify-content-center" id="32"></div>
+                    <div class="cell r3 c6 d-flex align-items-center justify-content-center" id="33"></div>
+                    <div class="cell r3 c7 d-flex align-items-center justify-content-center" id="34"></div>
+                    <div class="cell r3 c8 d-flex align-items-center justify-content-center" id="35"></div>
+                    <div class="cell r4 c0 d-flex align-items-center justify-content-center" id="36"></div>
+                    <div class="cell r4 c1 d-flex align-items-center justify-content-center" id="37"></div>
+                    <div class="cell r4 c2 d-flex align-items-center justify-content-center" id="38"></div>
+                    <div class="cell r4 c3 d-flex align-items-center justify-content-center" id="39"></div>
+                    <div class="cell r4 c4 d-flex align-items-center justify-content-center" id="40"></div>
+                    <div class="cell r4 c5 d-flex align-items-center justify-content-center" id="41"></div>
+                    <div class="cell r4 c6 d-flex align-items-center justify-content-center" id="42"></div>
+                    <div class="cell r4 c7 d-flex align-items-center justify-content-center" id="43"></div>
+                    <div class="cell r4 c8 d-flex align-items-center justify-content-center" id="44"></div>
+                    <div class="cell r5 c0 d-flex align-items-center justify-content-center" id="45"></div>
+                    <div class="cell r5 c1 d-flex align-items-center justify-content-center" id="46"></div>
+                    <div class="cell r5 c2 d-flex align-items-center justify-content-center" id="47"></div>
+                    <div class="cell r5 c3 d-flex align-items-center justify-content-center" id="48"></div>
+                    <div class="cell r5 c4 d-flex align-items-center justify-content-center" id="49"></div>
+                    <div class="cell r5 c5 d-flex align-items-center justify-content-center" id="50"></div>
+                    <div class="cell r5 c6 d-flex align-items-center justify-content-center" id="51"></div>
+                    <div class="cell r5 c7 d-flex align-items-center justify-content-center" id="52"></div>
+                    <div class="cell r5 c8 d-flex align-items-center justify-content-center" id="53"></div>
+                    <div class="cell r6 c0 d-flex align-items-center justify-content-center" id="54"></div>
+                    <div class="cell r6 c1 d-flex align-items-center justify-content-center" id="55"></div>
+                    <div class="cell r6 c2 d-flex align-items-center justify-content-center" id="56"></div>
+                    <div class="cell r6 c3 d-flex align-items-center justify-content-center" id="57"></div>
+                    <div class="cell r6 c4 d-flex align-items-center justify-content-center" id="58"></div>
+                    <div class="cell r6 c5 d-flex align-items-center justify-content-center" id="59"></div>
+                    <div class="cell r6 c6 d-flex align-items-center justify-content-center" id="60"></div>
+                    <div class="cell r6 c7 d-flex align-items-center justify-content-center" id="61"></div>
+                    <div class="cell r6 c8 d-flex align-items-center justify-content-center" id="62"></div>
+                    <div class="cell r7 c0 d-flex align-items-center justify-content-center" id="63"></div>
+                    <div class="cell r7 c1 d-flex align-items-center justify-content-center" id="64"></div>
+                    <div class="cell r7 c2 d-flex align-items-center justify-content-center" id="65"></div>
+                    <div class="cell r7 c3 d-flex align-items-center justify-content-center" id="66"></div>
+                    <div class="cell r7 c4 d-flex align-items-center justify-content-center" id="67"></div>
+                    <div class="cell r7 c5 d-flex align-items-center justify-content-center" id="68"></div>
+                    <div class="cell r7 c6 d-flex align-items-center justify-content-center" id="69"></div>
+                    <div class="cell r7 c7 d-flex align-items-center justify-content-center" id="70"></div>
+                    <div class="cell r7 c8 d-flex align-items-center justify-content-center" id="71"></div>
+                    <div class="cell r8 c0 d-flex align-items-center justify-content-center" id="72"></div>
+                    <div class="cell r8 c1 d-flex align-items-center justify-content-center" id="73"></div>
+                    <div class="cell r8 c2 d-flex align-items-center justify-content-center" id="74"></div>
+                    <div class="cell r8 c3 d-flex align-items-center justify-content-center" id="75"></div>
+                    <div class="cell r8 c4 d-flex align-items-center justify-content-center" id="76"></div>
+                    <div class="cell r8 c5 d-flex align-items-center justify-content-center" id="77"></div>
+                    <div class="cell r8 c6 d-flex align-items-center justify-content-center" id="78"></div>
+                    <div class="cell r8 c7 d-flex align-items-center justify-content-center" id="79"></div>
+                    <div class="cell r8 c8 d-flex align-items-center justify-content-center" id="80"></div>
+                </div>
+            </div>
+            <div class="col-12 mt-3">
+                <button type="button" class="btn btn-primary w-100 mb-3" id="solvebtn">解く</button>
+            </div>
+        </div>
+
+        <!-- JavaScript -->
+        <script src="./libs/jquery/jquery-3.6.1.min.js"></script>
+        <script src="./libs/bootstrap/bootstrap.min.js"></script>
+        <script src="./main.js"></script>
+    </body>
+</html>
